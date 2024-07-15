@@ -162,5 +162,5 @@ cython_debug/
 #.idea/
 
 
-./file/*
-!./file/.gitkeep
+file/*
+!file/.gitkeep
