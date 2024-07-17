@@ -8,7 +8,7 @@ from urllib.parse import quote_plus
 CC_INDEX_SERVER = 'http://index.commoncrawl.org/'
 
 # The Common Crawl index you want to query
-INDEX_NAME = 'CC-MAIN-2023-40'      # Replace with the latest index name
+INDEX_NAME = 'CC-MAIN-2024-26'      # Replace with the latest index name
 
 # The URL you want to look up in the Common Crawl index
 target_url = 'commoncrawl.org/faq'  # Replace with your target URL
@@ -47,9 +47,6 @@ if records:
 
     # Fetch the page content from the first record
     content = fetch_page_from_cc(records)
-    print(content)
-    
-    
     if content:
         print(f"Successfully fetched content for {target_url}")
         # You can now process the 'content' variable as needed
